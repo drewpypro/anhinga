@@ -1,0 +1,22 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: anhinga-virtual-service
+  namespace: anhinga-namespace
+spec:
+  hosts:
+    - "*"
+  gateways:
+    - istio-system/ingress-gateway
+  http:
+    - match:
+        - port: 30080
+          uri:
+            prefix: "/anhinga"
+      rewrite:
+        uri: "/index.html"
+      route:
+        - destination:
+            host: anhinga
+            port:
+              number: 80
