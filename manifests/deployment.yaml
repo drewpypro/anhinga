@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: anhinga
-        image: ghcr.io/${GITHUB_REPOSITORY_OWNER}/anhinga:latest
+        image: ghcr.io/drewpypro/anhinga:latest
         ports:
         - containerPort: 80
