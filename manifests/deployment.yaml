@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: anhinga
-        image: ghcr.io/drewpypro/anhinga:latest
+        image: ghcr.io/drewpypro/anhinga:v1.0.2
         ports:
         - containerPort: 80
