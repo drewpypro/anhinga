@@ -5,15 +5,10 @@ metadata:
   namespace: anhinga-namespace
 spec:
   hosts:
-    - "*"
+    - anhinga.drewpy.pro
   gateways:
     - istio-system/ingress-gateway
   http:
-    - match:
-        - uri:
-            prefix: "/anhinga"
-      rewrite:
-        uri: "/index.html"
       route:
         - destination:
             host: anhinga
