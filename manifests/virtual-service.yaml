@@ -5,7 +5,7 @@ metadata:
   namespace: anhinga-namespace
 spec:
   hosts:
-    - anhinga-test.drewpy.pro
+    - anhinga.drewpy.pro
   gateways:
     - istio-ingress/ingress-gateway
   http:
